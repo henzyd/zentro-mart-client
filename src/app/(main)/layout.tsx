@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { FaRegHeart, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { IoMail } from "react-icons/io5";
-import { CiSearch } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 import Logo from "~/components/logo";
 import { Button } from "~/components/ui/button";
 
@@ -11,9 +11,9 @@ export default function MainLayout({ children }: { children: ReactNode }) {
     <main className="max-w-App flex min-h-screen flex-col">
       <header className="flex justify-between gap-6 bg-white p-4 px-6">
         <Logo />
-        <Button variant="ghost" className="w-[150px] gap-3">
-          <CiSearch />
-          <span className="text-zinc-600/90">Search</span>
+        <Button variant="ghost" className="w-[150px] gap-3 text-zinc-600/90">
+          <FiSearch />
+          Search
         </Button>
         <div className="flex items-center gap-4">
           <FaRegHeart className="text-lg" />
