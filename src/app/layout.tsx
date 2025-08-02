@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import TanstackQueryProvider from "~/components/providers/tanstack-query";
 
 export const metadata: Metadata = {
   title: "Zentro Mart",
@@ -13,8 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`min-h-screen scroll-smooth antialiased`}>
-        {children}
+      <body
+        className={`max-w-App min-h-screen w-full scroll-smooth antialiased`}
+      >
+        <TanstackQueryProvider>{children}</TanstackQueryProvider>
       </body>
     </html>
   );
