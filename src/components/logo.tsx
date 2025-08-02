@@ -1,4 +1,4 @@
-import { cn } from "~/lib/utils";
+import { cn } from "~/lib/utils/cn";
 
 type Props = React.ComponentProps<"h1"> & {
   className?: string;
