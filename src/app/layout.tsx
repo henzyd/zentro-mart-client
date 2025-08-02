@@ -14,9 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`max-w-App min-h-screen w-full scroll-smooth antialiased`}
-      >
+      <body className={`scroll-smooth bg-blue-50/80 antialiased`}>
         <TanstackQueryProvider>{children}</TanstackQueryProvider>
       </body>
     </html>
