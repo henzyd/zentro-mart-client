@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f4d2f44c-dc22-4f88-8b42-9c72cfa8e489",
+    "name": "Shop 1",
+    "slug": "shop-1",
+    "no_products": 34
+  },
+  {
+    "id": "dd09f450-2c3f-44b2-b389-e35b9d9182f6",
+    "name": "Shop 2",
+    "slug": "shop-2",
+    "no_products": 27
+  },
+  {
+    "id": "3e7fcf4e-20cf-471e-8513-9652f6dfb395",
+    "name": "Shop 3",
+    "slug": "shop-3",
+    "no_products": 52
+  },
+  {
+    "id": "c75f6452-d78a-4723-86e5-2a2fbe9483d7",
+    "name": "Shop 4",
+    "slug": "shop-4",
+    "no_products": 19
+  },
+  {
+    "id": "79a72742-6029-4434-9e69-bc9b0635e80e",
+    "name": "Shop 5",
+    "slug": "shop-5",
+    "no_products": 88
+  },
+  {
+    "id": "ff902d6b-f2d9-4391-8c71-3e3f98db6e99",
+    "name": "Shop 6",
+    "slug": "shop-6",
+    "no_products": 11
+  },
+  {
+    "id": "0ef681d5-4446-4a3a-83e7-59a1b3153055",
+    "name": "Shop 7",
+    "slug": "shop-7",
+    "no_products": 43
+  },
+  {
+    "id": "1d4e6dc6-2e60-41ae-b6a0-f77a2670d0de",
+    "name": "Shop 8",
+    "slug": "shop-8",
+    "no_products": 65
+  },
+  {
+    "id": "ac378798-48f3-49f7-9f59-414e35609eb5",
+    "name": "Shop 9",
+    "slug": "shop-9",
+    "no_products": 76
+  },
+  {
+    "id": "ab16b845-840e-4b2a-b325-17601784c6d4",
+    "name": "Shop 10",
+    "slug": "shop-10",
+    "no_products": 5
+  }
+]

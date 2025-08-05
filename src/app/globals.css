@@ -17,7 +17,7 @@
   --background: oklch(1 0 0);
   --primary: oklch(66.44% 0.13 213.89);
   --secondary: oklch(51.18% 0.17 29.88);
-  --accent: oklch(0.85 0.02 270);
+  --accent: oklch(0.94 0 0 / 0.8);
   --destructive: oklch(0.577 0.245 27.325);
   --ring: oklch(0.708 0 0);
   --sidebar: oklch(0.985 0 0);
