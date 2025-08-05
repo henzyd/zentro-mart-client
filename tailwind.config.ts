@@ -1,10 +1,15 @@
 import type { Config } from "tailwindcss";
 
 export default {
+  content: [
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       maxWidth: {
-        App: "1300px",
+        app: "1600px",
+        shop: "1300px",
       },
       screens: {
         xsMobile: "320px",
