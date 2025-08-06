@@ -15,7 +15,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           <FiSearch />
           Search
         </Button>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <FaRegHeart className="text-lg" />
           <HiOutlineShoppingCart className="text-lg" />
         </div>
