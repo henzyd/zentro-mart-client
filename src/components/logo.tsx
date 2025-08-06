@@ -10,7 +10,7 @@ export default function Logo({ className, ...props }: Props) {
       {...props}
       className={cn("text-xl font-semibold text-nowrap italic", className)}
     >
-      Resolve It
+      Zentro Mart
     </h1>
   );
 }
