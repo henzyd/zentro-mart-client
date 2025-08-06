@@ -1,5 +1,5 @@
 import { BiFilterAlt } from "react-icons/bi";
-import { Skeleton } from "../ui/skeleton";
+import { Skeleton } from "~/components/ui/skeleton";
 
 interface FilterSectionContainerProps {
   title: string;

@@ -1,6 +1,10 @@
 import { Suspense } from "react";
-import FilterWidgetSkeleton from "~/components/skeletons/filter-widget";
-import FilterWidget from "~/components/widgets/shop/filter";
+import ShopFilterWidgetSkeleton from "~/components/skeletons/shop/filter-widget";
+import { Skeleton } from "~/components/ui/skeleton";
+import ShopFilterWidget from "~/components/widgets/shop/filter";
+import ShopSearchWidget from "~/components/widgets/shop/search";
+import ShopSortWiget from "~/components/widgets/shop/sort";
+import ShopViewWidget from "~/components/widgets/shop/view";
 
 interface ShopSearchParams {
   q?: string;
@@ -18,8 +22,7 @@ export default async function Shop({
   searchParams: Promise<ShopSearchParams>;
 }) {
   const resolvedParams = await searchParams;
-  const { categories, brands, ratings } = resolvedParams;
-  // const { q, sort, view, page, categories, brands, ratings } = resolvedParams;
+  const { q, sort, view, categories, brands, ratings } = resolvedParams;
 
   const initialFilters = {
     categories:
@@ -55,11 +58,36 @@ export default async function Shop({
 
   return (
     <section className="max-w-shop mx-auto flex w-full grow gap-6 p-4">
-      <Suspense fallback={<FilterWidgetSkeleton />}>
-        <FilterWidget initialFilters={initialFilters} />
+      <Suspense fallback={<ShopFilterWidgetSkeleton />}>
+        <ShopFilterWidget initialFilters={initialFilters} />
       </Suspense>
-      <div className="flex flex-col gap-6">
-        <header></header>
+      <div className="flex w-full flex-col gap-6">
+        <header className="flex flex-col gap-x-4 gap-y-6">
+          <div className="flex items-center justify-between gap-4">
+            <Suspense
+              fallback={
+                <Skeleton className="h-8 w-full max-w-[300px] rounded-full" />
+              }
+            >
+              <ShopSearchWidget searchVal={q} />
+            </Suspense>
+            <small className="text-end text-zinc-500">
+              Showing 1–8 of 86 results
+            </small>
+          </div>
+          <div className="flex justify-between gap-4">
+            <Suspense
+              fallback={
+                <Skeleton className="h-8 w-full max-w-[500px] rounded-md" />
+              }
+            >
+              <ShopSortWiget sortVal={sort} />
+            </Suspense>
+            <Suspense fallback={<Skeleton className="h-8 w-20 rounded-md" />}>
+              <ShopViewWidget viewVal={view} />
+            </Suspense>
+          </div>
+        </header>
         <section></section>
       </div>
     </section>

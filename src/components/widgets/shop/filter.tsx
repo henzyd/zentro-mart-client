@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { BiFilterAlt } from "react-icons/bi";
 import { FaStar } from "react-icons/fa6";
 import { Checkbox } from "~/components/ui/checkbox";
@@ -9,7 +10,6 @@ import categories from "~/lib/data/categories.json";
 import brands from "~/lib/data/brands.json";
 import { cn } from "~/lib/utils";
 import { useDebounce } from "~/lib/hooks/use-debounce";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 interface FilterState {
   categories: string[];
@@ -41,7 +41,6 @@ interface Props {
 }
 
 const INITIAL_DISPLAY_COUNT = 5;
-const DEBOUNCE_DELAY = 500;
 
 const RATINGS: RatingItem[] = [
   { stars: 5, count: 156 },
@@ -86,7 +85,7 @@ const FilterSection = ({ title, children }: FilterSectionProps) => (
   </section>
 );
 
-export default function FilterWidget({ initialFilters }: Props) {
+export default function ShopFilterWidget({ initialFilters }: Props) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -98,7 +97,7 @@ export default function FilterWidget({ initialFilters }: Props) {
     ...initialFilters,
   });
 
-  const debouncedFilters = useDebounce(filters, DEBOUNCE_DELAY) as FilterState;
+  const debouncedFilters = useDebounce(filters) as FilterState;
 
   const displayedCategories = useMemo(
     () =>
@@ -190,7 +189,7 @@ export default function FilterWidget({ initialFilters }: Props) {
   );
 
   return (
-    <aside className="h-fit w-[250px] rounded-md bg-white">
+    <aside className="h-fit w-[250px] shrink-0 rounded-md bg-white">
       <section className="flex items-center gap-3 border-b border-zinc-100 p-4">
         <BiFilterAlt />
         <p>Filters</p>
