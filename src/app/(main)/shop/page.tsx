@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import ShopFilterWidgetSkeleton from "~/components/skeletons/shop/filter-widget";
 import { Skeleton } from "~/components/ui/skeleton";
 import ShopFilterWidget from "~/components/widgets/shop/filter";
+import ShopProductListWidget from "~/components/widgets/shop/product-list";
 import ShopSearchWidget from "~/components/widgets/shop/search";
 import ShopSortWiget from "~/components/widgets/shop/sort";
 import ShopViewWidget from "~/components/widgets/shop/view";
@@ -57,11 +58,11 @@ export default async function Shop({
   // };
 
   return (
-    <section className="max-w-shop mx-auto flex w-full grow gap-6 p-4">
+    <section className="max-w-shop mx-auto flex w-full grow gap-6 p-4 pb-12">
       <Suspense fallback={<ShopFilterWidgetSkeleton />}>
         <ShopFilterWidget initialFilters={initialFilters} />
       </Suspense>
-      <div className="flex w-full flex-col gap-6">
+      <div className="flex w-full flex-col gap-8">
         <header className="flex flex-col gap-x-4 gap-y-6">
           <div className="flex items-center justify-between gap-4">
             <Suspense
@@ -88,7 +89,7 @@ export default async function Shop({
             </Suspense>
           </div>
         </header>
-        <section></section>
+        <ShopProductListWidget />
       </div>
     </section>
   );

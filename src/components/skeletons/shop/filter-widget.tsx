@@ -67,7 +67,7 @@ const RatingSectionSkeleton = () => (
 
 export default function FilterWidgetSkeleton() {
   return (
-    <aside className="h-fit w-[250px] rounded-md bg-white">
+    <aside className="h-fit w-[250px] shrink-0 rounded-md bg-white">
       <section className="flex items-center gap-3 border-b border-zinc-100 p-4">
         <BiFilterAlt className="text-gray-400" />
         <p>Filters</p>
