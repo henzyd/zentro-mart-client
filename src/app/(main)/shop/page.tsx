@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import { Suspense } from "react";
 import ShopFilterWidgetSkeleton from "~/components/skeletons/shop/filter-widget";
 import { Skeleton } from "~/components/ui/skeleton";
