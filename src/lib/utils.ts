@@ -20,3 +20,13 @@ export function simulateApiCall<T = unknown>(
     }, delay);
   });
 }
+
+export const formatPrice = (amount: number, currencyCode: string) => {
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: currencyCode.toUpperCase(),
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 2,
+  });
+  return formatter.format(amount);
+};

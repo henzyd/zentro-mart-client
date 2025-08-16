@@ -1,0 +1,202 @@
+[
+  {
+    "id": "dd09f450-2c3f-44b2-b389-e35b9d9182f6",
+    "title": "Montes Scelerisque",
+    "slug": "montes-scelerisque",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/1.94884ddf.png",
+    "brand": "TechVision",
+    "category": "Electronics",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.",
+    "price": {
+      "id": "dd09f450-2c3f-44b2-b389-e35b9d9182f6",
+      "amount": 500,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.2,
+      "total_reviews": 156,
+      "distribution": {
+        "5_star": 68,
+        "4_star": 45,
+        "3_star": 28,
+        "2_star": 10,
+        "1_star": 5
+      }
+    }
+  },
+  {
+    "id": "a8f3e721-9b4d-4c2a-8f1e-3d5c7b8e9f0a",
+    "title": "Wireless Headphones Pro",
+    "slug": "wireless-headphones-pro",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/2.94884ddf.png",
+    "brand": "AudioMax",
+    "category": "Electronics",
+    "description": "Premium wireless headphones with active noise cancellation and 30-hour battery life. Perfect for music lovers and professionals.",
+    "price": {
+      "id": "a8f3e721-9b4d-4c2a-8f1e-3d5c7b8e9f0a",
+      "amount": 299,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.7,
+      "total_reviews": 432,
+      "distribution": {
+        "5_star": 285,
+        "4_star": 98,
+        "3_star": 32,
+        "2_star": 12,
+        "1_star": 5
+      }
+    }
+  },
+  {
+    "id": "b2c4d6e8-1a3f-4b5c-9d7e-8f0a1b2c3d4e",
+    "title": "Smart Fitness Watch",
+    "slug": "smart-fitness-watch",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/3.94884ddf.png",
+    "brand": "FitTech",
+    "category": "Wearables",
+    "description": "Advanced fitness tracker with heart rate monitoring, GPS, and water resistance up to 50 meters. Track your health goals effectively.",
+    "price": {
+      "id": "b2c4d6e8-1a3f-4b5c-9d7e-8f0a1b2c3d4e",
+      "amount": 249,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.1,
+      "total_reviews": 298,
+      "distribution": {
+        "5_star": 142,
+        "4_star": 89,
+        "3_star": 45,
+        "2_star": 15,
+        "1_star": 7
+      }
+    }
+  },
+  {
+    "id": "c3d5e7f9-2b4g-5c6d-ae8f-9g0h1i2j3k4l",
+    "title": "Gaming Mechanical Keyboard",
+    "slug": "gaming-mechanical-keyboard",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/4.94884ddf.png",
+    "brand": "GameForce",
+    "category": "Gaming",
+    "description": "RGB backlit mechanical keyboard with blue switches, programmable keys, and anti-ghosting technology for competitive gaming.",
+    "price": {
+      "id": "c3d5e7f9-2b4g-5c6d-ae8f-9g0h1i2j3k4l",
+      "amount": 179,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.5,
+      "total_reviews": 687,
+      "distribution": {
+        "5_star": 398,
+        "4_star": 201,
+        "3_star": 62,
+        "2_star": 18,
+        "1_star": 8
+      }
+    }
+  },
+  {
+    "id": "d4e6f8g0-3c5h-6d7e-bf9g-0h1i2j3k4l5m",
+    "title": "Portable Bluetooth Speaker",
+    "slug": "portable-bluetooth-speaker",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/5.94884ddf.png",
+    "brand": "SoundWave",
+    "category": "Audio",
+    "description": "Compact waterproof speaker with 360-degree sound, 12-hour battery life, and built-in microphone for hands-free calls.",
+    "price": {
+      "id": "d4e6f8g0-3c5h-6d7e-bf9g-0h1i2j3k4l5m",
+      "amount": 89,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.3,
+      "total_reviews": 521,
+      "distribution": {
+        "5_star": 267,
+        "4_star": 156,
+        "3_star": 73,
+        "2_star": 19,
+        "1_star": 6
+      }
+    }
+  },
+  {
+    "id": "e5f7g9h1-4d6i-7e8f-cg0h-1i2j3k4l5m6n",
+    "title": "4K Webcam Ultra HD",
+    "slug": "4k-webcam-ultra-hd",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/6.94884ddf.png",
+    "brand": "VisionPro",
+    "category": "Electronics",
+    "description": "Ultra HD 4K webcam with auto-focus, built-in noise-canceling microphone, and wide-angle lens for professional streaming and video calls.",
+    "price": {
+      "id": "e5f7g9h1-4d6i-7e8f-cg0h-1i2j3k4l5m6n",
+      "amount": 149,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 3.9,
+      "total_reviews": 234,
+      "distribution": {
+        "5_star": 98,
+        "4_star": 67,
+        "3_star": 45,
+        "2_star": 18,
+        "1_star": 6
+      }
+    }
+  },
+  {
+    "id": "f6g8h0i2-5e7j-8f9g-dh1i-2j3k4l5m6n7o",
+    "title": "Ergonomic Office Chair",
+    "slug": "ergonomic-office-chair",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/7.94884ddf.png",
+    "brand": "ComfortZone",
+    "category": "Furniture",
+    "description": "Premium ergonomic office chair with lumbar support, adjustable height, and breathable mesh back for all-day comfort.",
+    "price": {
+      "id": "f6g8h0i2-5e7j-8f9g-dh1i-2j3k4l5m6n7o",
+      "amount": 399,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.6,
+      "total_reviews": 342,
+      "distribution": {
+        "5_star": 218,
+        "4_star": 87,
+        "3_star": 28,
+        "2_star": 7,
+        "1_star": 2
+      }
+    }
+  },
+  {
+    "id": "g7h9i1j3-6f8k-9g0h-ei2j-3k4l5m6n7o8p",
+    "title": "Smart Home Security Camera",
+    "slug": "smart-home-security-camera",
+    "thumbnail": "https://demo.dashboardmarket.com/hexadash-vue/img/8.94884ddf.png",
+    "brand": "SecureHome",
+    "category": "Smart Home",
+    "description": "WiFi-enabled security camera with night vision, motion detection, two-way audio, and cloud storage integration.",
+    "price": {
+      "id": "g7h9i1j3-6f8k-9g0h-ei2j-3k4l5m6n7o8p",
+      "amount": 129,
+      "currency_code": "usd"
+    },
+    "rating": {
+      "average": 4.4,
+      "total_reviews": 789,
+      "distribution": {
+        "5_star": 456,
+        "4_star": 234,
+        "3_star": 67,
+        "2_star": 23,
+        "1_star": 9
+      }
+    }
+  }
+]
