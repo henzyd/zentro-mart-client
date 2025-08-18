@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import TanstackQueryProvider from "~/components/providers/tanstack-query";
+import { AuthProvider } from "~/components/providers/auth";
 
 export const metadata: Metadata = {
   title: "Zentro Mart",
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`scroll-smooth bg-blue-50/80 antialiased`}>
-        <TanstackQueryProvider>{children}</TanstackQueryProvider>
+        <TanstackQueryProvider>
+          <AuthProvider>{children}</AuthProvider>
+        </TanstackQueryProvider>
       </body>
     </html>
   );

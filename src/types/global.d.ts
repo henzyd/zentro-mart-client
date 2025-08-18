@@ -29,3 +29,7 @@ export interface Product {
   price: Price;
   rating: Rating;
 }
+
+interface User {
+  id: string;
+}

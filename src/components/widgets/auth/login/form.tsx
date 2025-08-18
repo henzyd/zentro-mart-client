@@ -2,11 +2,13 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 import { Formik } from "formik";
 import * as Yup from "yup";
 import FormField from "~/components/forms/fields/form-field";
 import { Button } from "~/components/ui/button";
 import { Checkbox } from "~/components/ui/checkbox";
+
 // import { useLogin } from "~/lib/hooks/auth";
 
 interface Props {
@@ -24,6 +26,14 @@ export default function LoginForm({ origin }: Props) {
   const router = useRouter();
 
   // const { mutateAsync: login } = useLogin();
+
+  async function handleGoogleSignIn() {
+    const result = await signIn("google", {
+      callbackUrl: "/dashboard-mini",
+      // redirect: true,
+    });
+    console.log(result, "handle Google sign in");
+  }
 
   return (
     <Formik
@@ -92,10 +102,10 @@ export default function LoginForm({ origin }: Props) {
             <span className="h-[1px] w-full rounded-full bg-black/20" />
           </div>
           <Button
-            type="submit"
+            type="button"
             size="lg"
-            loading={isSubmitting}
             variant={"outline"}
+            onClick={handleGoogleSignIn}
           >
             Login with Google
           </Button>
